@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { restoreView } from '@angular/core/src/render3';
 
+declare var $: any;
+
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -15,7 +17,9 @@ export class HeroesComponent implements OnInit {
   prueba : Prueba = new Prueba()
   constructor(private service : RestService) {  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    $('.datepicker').datepicker();
+  }
 
   insertPrueba(){
     this.prueba.id = 1
