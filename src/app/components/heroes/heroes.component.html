@@ -3,15 +3,27 @@
 </head>
 
 <div class="container" id="heroes__container__main">
-  <div id="heroes__container__form">
-    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-    <a class="waves-effect waves-light btn" (click) = insertPrueba()>Send</a>
-  </div>
+  <form class="text-center border border-light p-5">
+    <div id="heroes__container__form">
+      <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+      
+    </div>
 
-  <div class="input-field">
-    <input id="birthdate" type="text" class="datepicker">
-    <label for="birthdate">Birthdate</label>
-  </div>
-  
+    <div class="input-field">
+      <input id="birthdate" type="text" class="datepicker">
+      <label for="birthdate">Start Date</label>
+    </div>
+
+    <div class="input-field">
+      <input id="birthdate" type="text" class="datepicker">
+      <label for="birthdate">End Date</label>
+    </div>
+
+    <div class="form-group">
+      <textarea class="form-control rounded-10" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+    </div>
+
+    <a class="waves-effect waves-light btn" (click) = insertPrueba()>Send</a>
+  </form>
 </div>
 
