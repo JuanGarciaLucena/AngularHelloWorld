@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './components/heroes/heroes.component';
@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     MDBBootstrapModule.forRoot()
   ],
