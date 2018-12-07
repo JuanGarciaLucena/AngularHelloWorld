@@ -3,27 +3,37 @@
 </head>
 
 <div class="container" id="heroes__container__main">
-  <form class="text-center border border-light p-5">
+  <form class="text-center border border-light p-5" #formulario="ngForm" (ngSubmit)="guardar(formulario)">
+
+    <!-- NOMBRE DE LA EMPRESA -->
     <div id="heroes__container__form">
-      <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-      
+      <input placeholder="Nombre de la empresa" id="companyName" type="text" class="validate" [(ngModel)]="companyName" name="companyName" #name="ngModel">
     </div>
 
+    <!-- FECHA INICIO -->
     <div class="input-field">
-      <input id="birthdate" type="text" class="datepicker">
-      <label for="birthdate">Start Date</label>
+      <input id="startDate" type="text" class="datepicker" [(ngModel)] = "startDate" name="startDate" #name="ngModel">
+      <label for="startDate">Start Date</label>
     </div>
 
+    <!-- FECHA FIN -->
     <div class="input-field">
       <input id="birthdate" type="text" class="datepicker">
       <label for="birthdate">End Date</label>
     </div>
 
+    <!-- NOMBRE DEL PUESTO -->
+    <div id="heroes__container__form">
+        <input placeholder="Nombre del puesto" id="first_name" type="text" class="validate">
+      </div>
+
+    <!-- DESCRIPCIÓN DEL PUESTO -->
     <div class="form-group">
-      <textarea class="form-control rounded-10" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+      <textarea class="form-control rounded-10" id="exampleFormControlTextarea2" rows="3" placeholder="Descripción del puesto"></textarea>
     </div>
 
-    <a class="waves-effect waves-light btn" (click) = insertPrueba()>Send</a>
+    <!-- ENVIAR -->
+    <button class="waves-effect waves-light btn" type="submit">Send</button>
   </form>
 </div>
 

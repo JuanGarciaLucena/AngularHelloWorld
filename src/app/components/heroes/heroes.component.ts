@@ -1,11 +1,10 @@
 import { Prueba } from './../../model/prueba';
 import { RestService } from './../../services/rest.service';
 import { Component, OnInit } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import { restoreView } from '@angular/core/src/render3';
+import { NgForm } from '@angular/forms';
 
 declare var $: any;
+
 
 @Component({
   selector: 'app-heroes',
@@ -14,21 +13,27 @@ declare var $: any;
 })
 
 export class HeroesComponent implements OnInit {
-  prueba : Prueba = new Prueba()
+  prueba : Prueba = new Prueba();
+
+  companyName : string;
+
   constructor(private service : RestService) {  }
 
   ngOnInit() {
     $('.datepicker').datepicker();
   }
 
-  insertPrueba(){
-    this.prueba.id = 1
+  guardar(formulario: NgForm){
+    /*this.prueba.id = 1
     this.prueba.value = "BLA BLA BLA"
     console.log(this.prueba)
     this.service.insertPrueba(this.prueba).subscribe(a =>{
       console.log("INSERTADO")
     }, error =>{
       console.error("PAQUETE")
-    })
+    })*/
+
+
+    console.log(formulario)
   }
 }
