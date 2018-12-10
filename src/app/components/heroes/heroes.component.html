@@ -10,21 +10,22 @@
       <input placeholder="Nombre de la empresa" id="companyName" type="text" class="validate" [(ngModel)]="companyName" name="companyName" #name="ngModel">
     </div>
 
-    <!-- FECHA INICIO -->
-    <div class="input-field">
-      <input id="startDate" type="text" class="datepicker" [(ngModel)] = "startDate" name="startDate" #name="ngModel">
-      <label for="startDate">Start Date</label>
-    </div>
-
-    <!-- FECHA FIN -->
-    <div class="input-field">
-      <input id="birthdate" type="text" class="datepicker">
-      <label for="birthdate">End Date</label>
-    </div>
-
     <!-- NOMBRE DEL PUESTO -->
     <div id="heroes__container__form">
-        <input placeholder="Nombre del puesto" id="first_name" type="text" class="validate">
+      <input placeholder="Nombre del puesto" id="first_name" type="text" class="validate">
+    </div>
+
+    <!-- FECHAS -->
+    <div id="heroes__dates">
+        <div id="startDateBlock" class="input-field">
+          <label for="startDate">Start date</label>
+          <input id="startDate" placeholder="" type="date" name="bday">
+        </div>
+  
+        <div id="endDateBlock" class="input-field">
+          <label for="endDate">End date</label>
+          <input id="endDate" placeholder="" type="date" name="bday">
+        </div>
       </div>
 
     <!-- DESCRIPCIÓN DEL PUESTO -->

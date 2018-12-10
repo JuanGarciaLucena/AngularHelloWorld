@@ -1,8 +1,19 @@
 
-#heroes__container_main{
-    align-items: center;
+#heroes__container__main{
+    margin-top: 2%;
 }
 
 #heroes__label__header{
     font: 2em sans-serif;
+}
+
+#heroes__dates{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+#startDateBlock{
+    margin-right: 30px;
 }

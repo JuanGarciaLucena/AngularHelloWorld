@@ -32,8 +32,6 @@ export class HeroesComponent implements OnInit {
     }, error =>{
       console.error("PAQUETE")
     })*/
-
-
     console.log(formulario)
   }
 }
