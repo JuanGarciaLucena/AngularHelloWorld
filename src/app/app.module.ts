@@ -8,13 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AboutComponent } from './components/about/about.component';
 import { Routing } from './app.routing';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { JobHistoryComponent } from './components/job-history/job-history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     AboutComponent,
-    NavbarComponent
+    NavbarComponent,
+    JobHistoryComponent
   ],
   imports: [
     BrowserModule,
