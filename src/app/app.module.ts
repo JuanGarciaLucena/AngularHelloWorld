@@ -9,6 +9,9 @@ import { AboutComponent } from './components/about/about.component';
 import { Routing } from './app.routing';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { JobHistoryComponent } from './components/job-history/job-history.component';
+import { HomeComponent } from './components/home/home.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { JobHistoryComponent } from './components/job-history/job-history.compon
     HeroesComponent,
     AboutComponent,
     NavbarComponent,
-    JobHistoryComponent
+    JobHistoryComponent,
+    HomeComponent,
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

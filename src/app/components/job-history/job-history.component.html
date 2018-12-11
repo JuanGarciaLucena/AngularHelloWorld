@@ -2,10 +2,26 @@
   <a [routerLink]="['/heroes']" class="btn-floating btn-large waves-effect waves-light red" id="jobHistoryBtnAdd"><i class="material-icons">add</i></a>
 </div>
 
-
-<h4>Experiences</h4>
-<ul class="heroes">
-  <li *ngFor="let experience of experiences">
-      <span>{{experience.id}}</span> <span>{{experience.companyName}}</span>
-  </li>
-</ul>
+<div class="card">
+  <div class="card-header">Table</div>
+  <div class="card-body">
+  <table class="table table-striped table-borderless" [ngStyle]="{'margin-bottom': '0%'}">
+    <thead>
+      <tr>
+        <th scope="col">Company</th>
+        <th scope="col">Position</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+      </tr>
+    </thead>
+    <tbody > 
+      <tr *ngFor="let experience of experiences">
+        <th scope="row">{{experience.companyName}}</th>
+          <td>{{experience.positionName}}</td>
+          <td>{{experience.startDate}}</td>
+          <td>{{experience.endDate}}</td>
+      </tr>
+    </tbody >
+  </table>
+</div>
+</div>
